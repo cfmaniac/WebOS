@@ -1,0 +1,28 @@
+<cftransaction>
+<cfquery name="modules" datasource="#form.datasrc#">
+update webos_modules set module_installed='#form.analytics#' where module_name='Google Analytics'
+update webos_modules set module_installed='#form.articles#' where module_name='Articles'
+update webos_modules set module_installed='#form.banners#' where module_name='Banners'
+update webos_modules set module_installed='#form.blog#' where module_name='Blog'
+update webos_modules set module_installed='#form.chat#' where module_name='Chat'
+update webos_modules set module_installed='#form.didyouknow#' where module_name='Did you Knows'
+update webos_modules set module_installed='#form.links#' where module_name='Links Directory'
+update webos_modules set module_installed='#form.metatags#' where module_name='Meta Tags'
+update webos_modules set module_installed='#form.pages#' where module_name='Pages'
+update webos_modules set module_installed='#form.podcasts#' where module_name='PodCasts'
+update webos_modules set module_installed='#form.polls#' where module_name='Polls'
+update webos_modules set module_installed='#form.ratesticker#' where module_name='Rate Ticker'
+update webos_modules set module_installed='#form.rss#' where module_name='RSS Feeds'
+update webos_modules set module_installed='#form.sefurls#' where module_name='SEO Friendly URLS'
+update webos_modules set module_installed='#form.sitemap#' where module_name='Sitemap'
+update webos_modules set module_installed='#form.sitesearch#' where module_name='Site Search'
+update webos_modules set module_installed='#form.spotlights#' where module_name='Spotlights'
+update webos_modules set module_installed='#form.tellafriend#' where module_name='Tell-A-Friend'
+update webos_modules set module_installed='#form.stockticker#' where module_name='Stock Ticker'
+update webos_modules set module_installed='#form.mainpage#' where module_name='Main Page'
+update webos_modules set module_installed='#form.forum#' where module_name='Forum'
+update webos_modules set module_installed='#form.breadcrumbs#' where module_name='Breadcrumbs'
+update webos_modules set module_installed='#form.users#' where module_name='User Profiles'
+update webos_modules set module_installed='#form.newsletter#' where module_name='Newsletter'
+</cfquery>
+</cftransaction>

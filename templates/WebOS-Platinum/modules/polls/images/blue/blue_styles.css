@@ -1,0 +1,43 @@
+.fader { /* avoids flickering at the beginning */
+filter: alpha(opacity=0);
+-moz-opacity: 0;
+opacity: 0;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+color: #ffffff;
+font-size:12px;
+background-color: #013567;
+} 
+.results_shown{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+color: #ffffff;
+font-size:12px;
+background-color: #013567;
+}
+.results_small{
+font-family:Verdana, Arial, Helvetica, sans-serif;
+color: #ffffff;
+font-size:10px;
+font-weight:bold;
+background-color: #013567;
+}
+.results_small1 {font-family:Verdana, Arial, Helvetica, sans-serif;
+color: #ffffff;
+font-size:10px;
+font-weight:bold;
+background-color: #013567;
+}
+/* Radio Buttons */
+label.radio_checked {
+	background: #eeeeee url(images/radio1.gif) no-repeat;	
+	display: block;
+	height: 16px;
+	/*margin: 25px 0;*/
+	padding-left: 20px;
+}
+label.radio_unchecked  {
+	background: #eeeeee url(images/radio0.gif) no-repeat;	
+	display: block;
+	height: 16px;
+	/*margin: 25px 0;*/
+	padding-left: 20px;
+}

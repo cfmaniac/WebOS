@@ -1,0 +1,188 @@
+/* generic styles, defaults and such */
+body 
+{
+	font-family: sans-serif;
+	font-size: 12px;
+}
+td
+{
+	font-family: sans-serif;
+	font-size: 12px;
+	vertical-align: top;
+	border-collapse: collapse;
+}
+a {
+	color: #235577; /* dark blue */
+}
+/* table.plain is used to override inheritance */
+table, table.plain 
+{
+	border-collapse: collapse;
+	border: 0;
+	empty-cells: show;
+}
+table td, table.plain td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+table.profile
+{
+	border-collapse: collapse;
+	border: 2px solid #e0e0e0;
+	empty-cells: show;
+}
+table.profile td {
+	margin: 0;
+	padding: 3px;
+	border: 2px solid #e0e0e0;
+}
+
+/* this is the main table used on most pages */
+.tableDisplay {
+	border: 1px solid #235577; /* dark blue */
+	width: 100%;
+}
+.tableDisplay td {
+	padding: 6px;
+	border: 1px solid #235577;  /* dark blue */
+}
+
+tr.tableHeader td
+{
+	background-image: url(/themes/default/images/tableHeaderBG.jpg);
+	background-repeat: repeat-x;
+	background-color: #7788AA; /* in case there is no background image or it doesn't load */
+	font-weight: bold;
+}
+tr.tableSubheader td, tr.tableSubheader td a
+{
+	background-color: #cdd9de; /* light blue */
+	font-weight: bold;
+	color: #000000;
+}
+tr.tableRow0 td
+{
+	color: #235577;  /* dark blue */
+
+}
+tr.tableRow1 td
+{
+	background-color: #eff4f6; /* practically white! */
+	color: #235577;  /* dark blue */
+}
+td.postAuthorInfo
+{
+	background-color: #cdd9de; /* light blue */
+
+}
+td.postContent
+{
+
+}
+
+
+.signature {
+	border-top: 1px dashed #999999;
+}
+.edit_notice {
+	font-style: italic;
+}
+div.signature p {
+	margin: 0;
+}
+
+span.title {
+	font-family: serif;
+	font-size: 24px;
+	font-weight: normal;
+	font-variant: small-caps;
+}
+div.title {
+	border-bottom: 1px solid #235577;
+}
+
+textarea#body {
+	width: 450px;
+	height: 250px;
+}
+
+.formBox, .formDropDown {
+	width: 250px;
+	font-family: Verdana;
+	font-size: 11px;
+}
+div.code {
+	font-size: 11px;
+	border: solid thin #0000CC;
+	background-color: #FFFFCC;
+	white-space: nowrap;
+	overflow:auto;
+	display:block;
+	width:500px;
+}
+div.quotedText {
+	background-color: #e0e0e0;
+	padding: 5px;
+	margin-left: 10px;
+}
+
+table#forumList div.forumName {
+
+}
+table#forumList div.forumDesc {
+	margin-left: 15px;
+	font-style: italic;
+}
+p.error {
+	background-color: ffcccc;
+	color: black;
+	font-weight: bold;
+	border: 1px solid black;
+	padding: 5px;
+	margin-left: 20px;
+	width: 460px;
+}
+p.success {
+	font-weight: bold;
+	border: 1px solid black;
+	padding: 5px;
+	margin-left: 20px;
+	width: 460px;
+}
+
+.footer {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+	margin-top: 20px;
+}
+
+
+.postLinks, .postLinks a {
+	font-size: 0.9em;
+}
+.topMenu, .topMenu a {
+	color: #235577;  /* dark blue */
+}
+
+.button {
+	font-size: 11px;
+	background-image: url(/themes/default/images/buttonBG.jpg);
+	background-repeat: repeat-x;
+	background-color: #7788AA; /* in case there is no background image or it doesn't load */
+	color: white;
+	font-weight: bold;
+	height: 22px;
+	vertical-align: middle;
+	border: 1px solid black;
+	margin: 0;
+}
+A.button {
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-decoration: none;
+	line-height: 14px;
+}

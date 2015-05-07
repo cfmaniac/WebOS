@@ -1,0 +1,137 @@
+<style>
+/*Spotlights Styles*/
+##slideshow {
+	width: #arguments.spots_width#;
+	height:#arguments.spots_height#;
+	overflow:hidden;
+	/*border: 3px groove ##Bcccd9;*/
+	/*background: ##BCCCD9 url(_assets/spot_light_lg.jpg) no-repeat center center;*/
+	background: ##ffffff url(<cfoutput>#arguments.templates_dir##arguments.site_template#/#arguments.modules_dir#</cfoutput>spotlights/images/spot_light_lg.jpg) no-repeat center center;
+}
+##slideshow .slide {
+	position:absolute; 
+	width:#arguments.slide_width#; 
+	height:#arguments.spots_height#;
+	overflow:auto;
+	/*border: 1px solid ##000000;*/
+	border-bottom: 1px solid ##000066;
+	border-left: 1px solid ##000066;
+	border-right: 1px solid ##000066;
+	opacity:0.99; /* Fix Firefox opacity flicker problem */
+	
+}
+##slideshow .slidelinks_container {
+	/*position:absolute;*/
+	width:auto;
+	height:25px;
+	opacity:0.99; /* Fix Firefox opacity flicker problem */
+	
+}
+##slideshow .slideshowcontrols { 
+	/*position: absolute;*/
+	/*top:234px;*/
+	
+	float: center;
+	padding:0px 0px 0px 0px; 
+	width:auto; 
+	height:25px;
+}
+/* 4 Slides with text */
+ul.slideshowcontrolsmiddle{
+	height: 25px !important;
+	position: static;
+	top:236px;
+	text-align:center;
+	width: auto !important;
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	
+}
+ul.slideshowcontrolsmiddle li{
+	height: 29px;
+	width: 75px !important;
+	float: left;
+	margin: 0px 2px 0px 0px;
+}
+/* The a elements inside those 4 tabs */
+ul.slideshowcontrolsmiddle a:link {
+    color: ##000000; 
+	height: 25px; 
+	text-align: center; 
+	display: block;
+	width: 75px !important;
+	font-weight: bold !important;
+	text-decoration: none;
+	line-height:12px;
+	font-size: 10px; 
+	background: url(<cfoutput>#arguments.templates_dir##arguments.site_template#/#arguments.modules_dir#</cfoutput>spotlights/images/tabs.jpg) no-repeat 0px 0px;
+	border-top: 1px solid ##ffffff;	
+}
+
+/* The next 5 styles fix Netscape issues with padding it any other way */
+ul.slideshowcontrolsmiddle .single-line a {
+	line-height: 25px!important;
+}
+*html ul.slideshowcontrolsmiddle .single-line a {
+	line-height: 25px!important;
+}
+ul.slideshowcontrolsmiddle .padded_fmt {
+         display:block;
+         padding:0px 0px 0px 0px;
+}
+ul.slideshowcontrolsmiddle .single-line .padded_fmt {
+         display:block;
+         padding:0px 0px 0px 0px;
+}
+ul.slideshowcontrolsmiddle a.activeslide, ul.slideshowcontrolsmiddle a:hover {
+	background: url(<cfoutput>#arguments.templates_dir##arguments.site_template#/#arguments.modules_dir#</cfoutput>spotlights/images/tabs_over.jpg) no-repeat 0px 0px;
+	color: ##ffffff;
+	text-decoration: none;
+	border-top: 1px solid ##BCCCD9;
+}
+
+/* Used to make everything fade */
+##slideshow .opacity10 { opacity:0.99; filter:alpha(opacity=100); visibility:visible !important;}
+##slideshow .opacity9 { opacity:.9; filter:alpha(opacity=90); visibility:visible !important;}
+##slideshow .opacity8 { opacity:.8; filter:alpha(opacity=80); visibility:visible !important;}
+##slideshow .opacity7 { opacity:.7; filter:alpha(opacity=70); visibility:visible !important;}
+##slideshow .opacity6 { opacity:.6; filter:alpha(opacity=60); visibility:visible !important;}
+##slideshow .opacity5 { opacity:.5; filter:alpha(opacity=50); visibility:visible !important;}
+##slideshow .opacity4 { opacity:.4; filter:alpha(opacity=40); visibility:visible !important;}
+##slideshow .opacity3 { opacity:.3; filter:alpha(opacity=30); visibility:visible !important;}
+##slideshow .opacity2 { opacity:.2; filter:alpha(opacity=20); visibility:visible !important;}
+##slideshow .opacity1 { opacity:.1; filter:alpha(opacity=10); visibility:visible !important;}
+
+##slideshow .hide { 
+	visibility:hidden; 
+}
+
+##slideshow .show { 
+	visibility:visible !important;
+	display:block !important; 
+}
+
+/*The Spotlight Content Table(s)*/
+.spotlight{
+border: 2px solid ##BCCCD9;
+font-size:12px;
+font-weight: bold;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.spotlight_header{
+font-size:11px;
+font-weight: bold;
+color:##FFFFFF;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+background-image:url(<cfoutput>#arguments.templates_dir##arguments.site_template#</cfoutput>/assets/menu_bg.gif);
+height: 25px;
+}
+.spotlight_info{
+font-size:10px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+/*End Spotlights Styles*/
+</style>

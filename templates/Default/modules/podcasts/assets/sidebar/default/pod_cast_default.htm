@@ -1,0 +1,111 @@
+<!---We now load the Narrow PodCastGUI--->
+<table width="<cfoutput>#arguments.pdcast_width#</cfoutput>" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+   <td><img src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/spacer.gif" width="18" height="1" border="0" alt="" /></td>
+   <td><img src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/spacer.gif" width="8" height="1" border="0" alt="" /></td>
+   <td><img src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/spacer.gif" width="123" height="1" border="0" alt="" /></td>
+   <td><img src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/spacer.gif" width="8" height="1" border="0" alt="" /></td>
+   <td><img src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/spacer.gif" width="18" height="1" border="0" alt="" /></td>
+   <td><img src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+  </tr>
+
+  <tr>
+   <td><img name="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c1" src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c1.jpg" width="18" height="27" border="0" id="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c1" alt="" /></td>
+   <td width="8" align="left" background="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c3.jpg"><img name="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c2" src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c2.jpg" width="8" height="27" border="0" id="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c2" alt="" /></td>
+   <td align="center" background="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c3.jpg"><select name="cat" onChange="MM_jumpMenu('parent',this,0)">
+         <option value="index.cfm?cat=Home">Please Select a Topic</option>
+         <cfoutput query="pod_cast_cats" group="pod_cast_category_name">
+           <option value="index.cfm?cat=#pod_cast_catid#" <cfif #url.cat# EQ #pod_cast_catid#>selected="selected"</cfif>>#pod_cast_category_name#</option>
+         </cfoutput>
+    </select></td>
+   <td width="8" align="right" background="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c3.jpg"><img name="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c4" src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c4.jpg" width="8" height="27" border="0" id="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c4" alt="" /></td>
+   <td><img name="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c5" src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c5.jpg" width="18" height="27" border="0" id="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r1_c5" alt="" /></td>
+  </tr>
+  <tr>
+   <td><img name="pod_cast_default_r2_c1" src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r2_c1.jpg" width="18" height="9" border="0" id="pod_cast_default_r2_c1" alt="" /></td>
+   <td height="9" colspan="3" background="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r2_c2.jpg"></td>
+   <td><img name="pod_cast_default_r2_c5" src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r2_c5.jpg" width="18" height="9" border="0" id="pod_cast_default_r2_c5" alt="" /></td>
+   </tr>
+  <tr>
+   <td><img name="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r3_c1" src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r3_c1.jpg" width="18" height="14" border="0" id="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r3_c1" alt="" /></td>
+   <td height="14" colspan="3" background="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r3_c2.jpg"><img name="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r3_c2" src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r3_c2.jpg" width="139" height="14" border="0" id="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r3_c2" alt="" /></td>
+   <td><img name="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r3_c5" src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r3_c5.jpg" width="18" height="14" border="0" id="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r3_c5" alt="" /></td>
+   
+  </tr>
+  <tr>
+   <td width="18" background="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r4_c1.jpg">&nbsp;</td>
+   <td colspan="3" valign="top"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td height="23" align="center" valign="middle" class="play_list_head"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="play_list_head">
+      <tr>
+        <td width="68%" class="play_list_head">Title</td>
+        <td width="32%" class="play_list_head">Play Time</td>
+      </tr>
+    </table></td>
+    <td height="25" align="center" valign="middle" class="play_list_head">Action</td>
+  </tr>
+  <cfoutput query="pod_cast_list">
+  <cfset PreviousRow = pod_cast_list.CurrentRow - 1>
+  <cfset NextRow = pod_cast_list.CurrentRow + 1>
+  <CFSET class="row#Int(pod_cast_list.CurrentRow MOD 2)#">
+  <tr class = #class#>
+    <td height="25" >
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="67%"><a href="javascript:collapse#Int(pod_cast_list.CurrentRow)#.slidedown();" onClick="collapse#Int(pod_cast_list.CurrentRow)#.slideup();collapse#Int(PreviousRow)#.slideup();collapse#Int(NextRow)#.slideup();" class="play_list_title">#pod_cast_title#:</a></td>
+            <td width="33%" class="play_list_title">#pod_cast_playtime#</td>
+          </tr>
+          <tr>
+            <td colspan="2"><div id="track_info_#Int(pod_cast_list.CurrentRow)#" style="width: auto; height: auto; background-color:##ffffff;" class="play_list_info">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="play_list_info #class#">#pod_cast_description#
+                      <hr /> 
+                      File Size: #pod_cast_filesize# (bytes)                    
+</span></td>
+                  </tr>
+                </table>
+            </div>
+                <script type="text/javascript">
+//Syntax: var uniquevar=new animatedcollapse("DIV_id", animatetime_milisec, enablepersist(true/fase))
+var collapse#Int(pod_cast_list.CurrentRow)#=new animatedcollapse("track_info_#Int(pod_cast_list.CurrentRow)#", 1000, false)
+          </script></td>
+          </tr>
+        </table>
+
+    
+   </a></strong></td>
+    <td height="25" valign="middle" class="play_list_title">
+      <cfif #pod_cast_filename# eq "">
+
+    <cfelse>
+    
+    <table width="50" border="0" align="right" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="58%" align="right" valign="middle"><a href="#pod_cast_filename#"><img src="images/page/default/download_me.jpg" width="25" height="25" border="0"/></a></td>
+          <td width="42%" align="right" valign="middle"><a href="stream.cfm?file=#pod_cast_filename#"><img src="images/page/default/stream_me.jpg" width="25" height="25" border="0"/></a></td>
+        </tr>
+      </table>
+      </cfif>
+      </td>
+  </tr>
+  </cfoutput>
+  
+</table></td>
+   <td width="18" background="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r4_c5.jpg">&nbsp;</td>
+  
+  </tr>
+  <tr>
+   <td><img name="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r5_c1" src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r5_c1.jpg" width="18" height="14" border="0" id="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r5_c1" alt="" /></td>
+   <td colspan="3" background="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r5_c2.jpg">&nbsp;</td>
+   <td><img name="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r5_c5" src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r5_c5.jpg" width="18" height="14" border="0" id="pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r5_c5" alt="" /></td>
+  
+  </tr>
+  <tr>
+   <td><img name="pod_cast_default_r6_c1" src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r6_c1.jpg" width="18" height="20" border="0" id="pod_cast_default_r6_c1" alt="" /></td>
+   <td height="20" colspan="3" background="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r6_c2.jpg"></td>
+   <td><img name="pod_cast_default_r6_c5" src="images/<cfoutput>#arguments.pdcast_type#</cfoutput>/<cfoutput>#arguments.pdcast_colors#</cfoutput>/pod_cast_<cfoutput>#arguments.pdcast_colors#</cfoutput>_r6_c5.jpg" width="18" height="20" border="0" id="pod_cast_default_r6_c5" alt="" /></td>
+  
+  </tr>
+</table>
+<!---End of the Sidebar Type of PodCast--->
